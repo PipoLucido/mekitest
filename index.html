@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Scafolld-React</title>
+</head>
+<body>
+        
+    <div id="app"></div>
+    <br><br>
+    <div id="bottomContacto" >
+    <div id="mapTemplate" ></div>
+    
+    <div id="contactoSize" >
+            <br>
+            <h3 class="titleContact" >CONTACTO</h3>
+            <br>
+            
+            <form  action="">
+                <div id="formulario">
+                    <div class="input1">
+                    <input class=" form-control" type="text" placeholder="Nombre">
+                    <br>
+                    </div>
+                    
+                    <div class="input2">
+                    <input type="email" class=" form-control" id="exampleFormControlInput1" placeholder="direccion@ejemplo.com">
+                    <br>
+                    </div>
+                    
+                    <div class="input3">
+                    <textarea class=" form-control" id="exampleFormControlTextarea1" rows="4" placeholder="consulta"></textarea>
+                    <br>
+                    </div>
+                    <div class="btnSend">
+                        <div class="imgAlign">
+                        <img class="direccionSvg" src="./img/direccion.svg" alt="direccion">
+                        </div>
+                        <div class="btnAlign">
+                        <button type="submit" class="btn btn-success mb-2">Enviar</button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                </form>
+
+        </div>
+        <div class="footer">COPYRIGHT ACRILASER - 2019. TODOS LOS DERECHOS RESERVADOS</div>
+    </div>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+    <script>
+            const map = L.map('mapTemplate').setView([-34.606830, -58.386490], 15);
+            
+            
+            
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://agenciabyrons.com/">agenciabyrons.com</a> Byrons'
+            }).addTo(map);
+                    
+                    
+                 
+                    L.marker([-34.606830,-58.386490]).addTo(map)
+                    .bindPopup('Acrilaser');
+            
+                  
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/bundle.js" charset="UTF-8"></script>
+
+</body>
+</html>
