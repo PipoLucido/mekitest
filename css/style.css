@@ -2,6 +2,7 @@ body{
     margin:0;
     padding: 0;
     background-color:rgb(245, 245, 245);
+    font-family: 'Roboto', sans-serif;
 }
 
 body::-webkit-scrollbar{
@@ -14,10 +15,25 @@ body::-webkit-scrollbar-thumb{
     border-radius: 12px;
 }
 
+#loading{
+  height: 600px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading img{
+  width: 20%;
+}
+
+#contenidoEntero{
+  display: none;
+}
+
 .wpp{
   position: fixed;
   width: 100px;
-  top: 355px;
+  top: 455px;
   left: 15px;
   cursor: pointer;
   z-index: 999999999;
@@ -37,6 +53,7 @@ body::-webkit-scrollbar-thumb{
   /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 ); /* IE6-9 */
   background-color: #227faa;
   background-image: url('fondo.svg'); 
+  filter: grayscale(45%);
   background-size:100%; 
 }
 
@@ -46,7 +63,7 @@ body::-webkit-scrollbar-thumb{
  padding-left: 15px;
  padding-top: 15px;
  display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr 4fr 2fr;
+ grid-template-columns: 1fr 1fr 1fr 1fr 8fr 2fr;
  grid-template-rows: minmax(50px, auto) ;
 }
 
@@ -55,7 +72,7 @@ body::-webkit-scrollbar-thumb{
     align-items: flex-end;
     justify-content: center;
     color: white;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .instagramAlign{
@@ -152,7 +169,7 @@ width: 70px;
     text-align: center;
     color: #d60000;
     font-size: 25px;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*****************CARD************************/
@@ -638,7 +655,7 @@ width: 70px;
 }
 
 .titleContact{
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
@@ -780,6 +797,12 @@ font-size: 19px;
   width: 90px;
 }
 
+#loading{
+  height: 450px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 /***************MEDIAQUERYS@end*******************/
@@ -795,6 +818,7 @@ font-size: 19px;
   z-index: 99999999999999;
  padding: 15px;
  overflow: scroll;
+ font-family: 'Roboto', sans-serif;
 }
 
 
@@ -815,6 +839,7 @@ font-size: 19px;
   display: grid;
   grid-template-columns: 1fr  ;
   grid-template-rows: minmax(50px, auto) ;
+  font-family: 'Roboto', sans-serif;
 }
 
 .subDivisionModal{
